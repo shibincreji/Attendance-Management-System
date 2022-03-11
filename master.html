@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body, html {
+  height: 140%;
+  width: 105%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.hero-image {
+  background-image: linear-gradient(rgba(25, 120, 30, 0.3), rgba(160, 10, 50, 0.4)), url("02.jpg");
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  width: 100%;
+}
+.hero-text button {
+  border: none;
+  border-radius: 40px;
+  outline: 0;
+  display: inline-block;
+  padding: 12px 30px;
+  color: black;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 3px;
+  background-color: white;
+  transition: transform .4s ease;
+  margin: 0 auto;
+
+  text-align: center;
+  cursor: pointer;
+}
+.hero-text button:hover {
+  transform: scale(1.5);
+  background-color: #663399;
+  color: white;
+}
+.hero-text button:hover::before {
+	width: 100%;
+	height: 0;
+	transform: translate(-50%,-50%);
+}
+
+.middle{
+	position: absolute;
+	top: 3%;
+	left: 0%;
+    letter-spacing: 5px;
+	transform: translate(-50);
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.text{
+	position: absolute;
+	color: white;
+	left: 5%;
+	font-size: 80px;
+	font-family: "montserrat";
+	font-weight: 150;
+	cursor: pointer;
+}
+.hidden{
+	max-width: 0;
+	opacity: 0;
+	transition: 1s ease-in;
+
+}
+.text:hover .hidden{
+	opacity: 1;
+	max-width: 1em;
+}
+
+.flip-card {
+  background-color: transparent;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 0px;
+  height: 320px;
+  perspective: 300px;
+  justify-content: center;
+}
+
+.flip-card-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1.3s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(1,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg) rotateX(360deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.flip-card-front {
+  background-color: #bbb;
+  color: white;
+}
+.flip-card-back {
+  background-color: #FAEBD7;
+  left: -10px;
+  color: 	#FFE4C4;
+  transform: rotateY(180deg);
+}
+
+</style>
+<title>Mini Project DBMS</title>
+</head>
+<body>
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1 style="font-size:85px; text-shadow: 4px 8px 32px rgba(0,0,0,0.6); color: #F0FF00;">DBMS MINI PROJECT</h1>
+      <h2 style="color: #40E0D0;"><i><big>Crew Members</big></i></h2><br><br>
+
+      <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+
+          <img src="avatar1.png" alt="Avatar" style="width:310px;height:310px; position:absolute;">
+        </div>
+
+        <div class="flip-card-back">
+          <h1 style="font-size:40px;">Sanskar Drolia</h1>
+          <p><b style="font-family: montserrat; font-size:24px;">BE</b><br><i>Computer Science & Engineer</i></p>
+          <p></p>
+    </div>
+  </div>
+</div>
+<br><br><br><br><br><br>
+<div class="flip-card">
+<div class="flip-card-inner">
+  <div class="flip-card-front">
+
+    <img src="avatar2.png" alt="Avatar" style="width:320px;height:320px; position:absolute;">
+  </div>
+  <div class="flip-card-back">
+    <h1 style="font-size:40px;">Shibin C Reji</h1>
+    <p><b style="font-family: montserrat; font-size: 24px;">BE</b><br><i>Computer Science & Engineer</i></p>
+    <p></p>
+</div>
+</div>
+</div>
+      <br><br><br><br><br><br>
+      <button type="btn" onclick="window.location.href = 'http://localhost/Attendance/index.php';">Start The Project</button>
+    </div>
+  </div>
+  <div class="text middle" style="color: #ADD8E6; font-size:50px">
+    <span>R</span>
+    <span class="hidden">A</span>
+    <span class="hidden">J</span>
+    <span class="hidden">A</span>
+    <span>R</span>
+    <span class="hidden">A</span>
+    <span class="hidden">J</span>
+    <span class="hidden">E</span>
+    <span class="hidden">S</span>
+    <span class="hidden">W</span>
+    <span class="hidden">A</span>
+    <span class="hidden">R</span>
+    <span class="hidden">I</span>
+    <span class="hidden">&nbsp</span>
+    <span>C</span>
+    <span class="hidden">O</span>
+    <span class="hidden">L</span>
+    <span class="hidden">L</span>
+    <span class="hidden">E</span>
+    <span class="hidden">G</span>
+    <span class="hidden">E</span>
+    <span class="hidden">&nbsp</span>
+    <span class="hidden">O</span>
+    <span class="hidden">F</span>
+    <span class="hidden">&nbsp</span>
+    <span>E</span>
+    <span class="hidden">N</span>
+    <span class="hidden">G</span>
+    <span class="hidden">I</span>
+    <span class="hidden">N</span>
+    <span class="hidden">E</span>
+    <span class="hidden">E</span>
+    <span class="hidden">R</span>
+    <span class="hidden">I</span>
+    <span class="hidden">N</span>
+    <span class="hidden">G</span>
+  </div>
+</body>
+</html>
