@@ -9,6 +9,3 @@ functionality without disturbing any of the existing one. This is made possible 
 Object Oriented Programming, a Modular for designing web service, and following large 
 parts of MVC model. This allows us to extend the project to mobile applications and other environments.
 
-Video Demo : 
-
-https://www.projectworlds.in/online-attendance
