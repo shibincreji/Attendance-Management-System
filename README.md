@@ -1,4 +1,4 @@
-Attendance-System
+Attendance-Management-System
 =================
 
 The project is meant to create an advanced attendance taking system to help teachers, 
